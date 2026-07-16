@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# Environment Variables
+.env
+
+# IDE Settings
+.vscode/
+.idea/
+
+# Vector Database
+vectorstore/
+
+# Uploaded Data
+data/
+
+# Streamlit 
+.streamlit
