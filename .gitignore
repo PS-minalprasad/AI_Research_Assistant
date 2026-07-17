@@ -15,8 +15,5 @@ venv/
 # Vector Database
 vectorstore/
 
-# Uploaded Data
-data/
-
 # Streamlit 
 .streamlit
