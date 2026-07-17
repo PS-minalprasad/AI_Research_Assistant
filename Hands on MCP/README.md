@@ -1,6 +1,6 @@
 # Bug Trend Analysis Using Atlassian MCP
 
-L1 certification assignment submission — bug/defect data retrieved from Jira Cloud via
+Assignment submission — bug/defect data retrieved from Jira Cloud via
 Anthropic's **Atlassian Remote MCP** integration, analyzed for trends, severity,
 component concentration, resolution time, and root cause.
 
