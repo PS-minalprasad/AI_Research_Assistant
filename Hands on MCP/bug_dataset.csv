@@ -1,0 +1,21 @@
+issue_key,issue_type,summary,priority_severity,status,created_date,resolved_date,component_module,reporter,assignee,testing_phase_found,root_cause_category,resolution_time_days
+SCRUM-16,Bug,Two-factor code accepted after expiry,Low,Done,2025-12-25,2025-12-30,Authentication,Minal Prasad,Ravi Shankar,Staging,Coding Defects,5.5
+SCRUM-11,Bug,Duplicate records created on concurrent writes,Highest,Done,2026-02-28,2026-03-02,Database,Priya Nair,Wei Zhang,Production,Design/Architecture Issues,2.3
+SCRUM-15,Bug,Password reset email not sent,Medium,Done,2026-03-11,2026-03-15,Authentication,Priya Nair,Ravi Shankar,Production,Testing Gaps,4.4
+SCRUM-14,Bug,Session expires prematurely for SSO users,High,Done,2026-03-22,2026-03-27,Authentication,Arjun Rao,Ella Thompson,Regression Testing,Design/Architecture Issues,5.8
+SCRUM-9,Bug,Pagination skips records under high load,High,Done,2026-03-25,2026-03-27,Backend API,Sara Kim,Wei Zhang,Regression Testing,Design/Architecture Issues,2.0
+SCRUM-13,Bug,Foreign key constraint violation on delete,Medium,Done,2026-03-25,2026-03-29,Database,Devon Clarke,Ravi Shankar,QA Testing,Coding Defects,4.5
+SCRUM-22,Bug,Coupon expiry date off by one day in checkout validation,Medium,Done,2026-03-31,2026-04-07,Payment,Priya Nair,Wei Zhang,Staging,Coding Defects,7.3
+SCRUM-24,Bug,Webhook retries cause duplicate order status updates downstream,High,Done,2026-04-07,2026-04-12,Backend API,Minal Prasad,Wei Zhang,Production,Requirement Gaps,5.0
+SCRUM-19,Bug,Discount code stacking allows negative totals,Low,Done,2026-04-11,2026-04-16,Payment,Priya Nair,Noah Fischer,QA Testing,Requirement Gaps,5.3
+SCRUM-12,Bug,Slow query timeout on orders table,High,Done,2026-04-21,2026-04-22,Database,Devon Clarke,Ana Souza,Staging,Process/Tooling Issues,1.6
+SCRUM-10,Bug,Memory leak in report generation service,Highest,Done,2026-05-01,2026-05-03,Backend API,Sara Kim,Ravi Shankar,Staging,Coding Defects,2.6
+SCRUM-20,Bug,Push notifications delivered to wrong user after account switch,High,In Progress,2026-05-08,,Notifications,Devon Clarke,Wei Zhang,Production,Design/Architecture Issues,
+SCRUM-5,Bug,Login button unresponsive on Safari,High,Done,2026-05-13,2026-05-14,Authentication,Minal Prasad,,QA Testing,Coding Defects,1.8
+SCRUM-17,Bug,Duplicate charge on retry after timeout,Highest,Done,2026-05-30,2026-05-31,Payment,Arjun Rao,Ana Souza,Production,Requirement Gaps,1.0
+SCRUM-7,Bug,Dashboard chart labels overlapping on mobile,Low,Done,2026-05-30,2026-06-11,Frontend,Minal Prasad,Ravi Shankar,QA Testing,Testing Gaps,12.5
+SCRUM-18,Bug,Refund amount mismatch in currency conversion,Medium,Done,2026-06-07,2026-06-10,Payment,Priya Nair,Ella Thompson,Regression Testing,Design/Architecture Issues,3.4
+SCRUM-21,Bug,Email notification digest sent twice on daily cron overlap,Medium,Done,2026-06-13,2026-06-15,Notifications,Sara Kim,Ella Thompson,Regression Testing,Process/Tooling Issues,2.6
+SCRUM-6,Bug,Dark mode toggle resets on page refresh,Medium,Done,2026-06-21,2026-06-26,Frontend,Priya Nair,Wei Zhang,Regression Testing,Human Factors,5.8
+SCRUM-23,Bug,Search results not updating after applying multiple filters,High,Done,2026-07-06,2026-07-07,Frontend,Sara Kim,Ravi Shankar,Staging,Coding Defects,1.5
+SCRUM-8,Bug,API returns 500 on bulk export,Highest,Done,2026-07-06,2026-07-08,Backend API,Minal Prasad,Ella Thompson,Production,Process/Tooling Issues,2.9
