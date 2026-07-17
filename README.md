@@ -103,3 +103,114 @@ Future improvements:
 6. MCP Prototype
    - A basic MCP server structure is included.
    - It demonstrates how AI systems can expose tools for future integration.
+  
+---
+
+
+
+## ⚙ Installation
+
+
+
+### 1. Clone Repository
+
+
+
+```bash
+
+git clone https://github.com/PS-minalprasad/AI_Research_Assistant
+
+
+
+cd AI_Research_Assistant
+
+
+```
+
+---
+
+
+
+### 2. Create Virtual Environment
+
+
+
+Windows
+
+```bash
+
+python -m venv venv
+
+
+venv\Scripts\activate
+
+```
+
+Linux / Mac
+
+
+```bash
+
+python3 -m venv venv
+
+
+source venv/bin/activate
+
+```
+
+
+---
+
+
+### 3. Install Dependencies
+
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
+---
+
+
+### 4. Install Ollama
+
+Download from
+
+https://ollama.com
+
+---
+
+
+### 5. Download Required Models
+
+
+```bash
+
+ollama pull llama3.2:3b
+
+ollama pull nomic-embed-text
+
+```
+
+---
+
+### 6. Start Ollama
+
+
+```bash
+
+ollama serve
+
+```
+---
+
+### 7. Run the Application
+
+```bash
+
+streamlit run app.py
+
+```
+---
