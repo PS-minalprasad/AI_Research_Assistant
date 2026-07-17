@@ -54,7 +54,3 @@ report and is standard practice for a freshly-seeded demo project.
 - **Root cause:** Coding Defects (30%) and Design/Architecture Issues (25%)
   account for over half of all defects.
 
-## Next manual step (if you want to review in Jira directly)
-
-Open the project board to see all 20 issues:
-`https://productsquads-team-p8xe5ds9.atlassian.net/browse/SCRUM`
