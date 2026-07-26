@@ -1,9 +1,14 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
 
 # Virtual Environment
 venv/
+env/
+.venv/
 
 # Environment Variables
 .env
@@ -15,5 +20,16 @@ venv/
 # Vector Database
 vectorstore/
 
-# Streamlit 
-.streamlit
+# Streamlit
+.streamlit/
+
+# Logs
+logs/
+*.log
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Uploaded files saved at runtime (keep the committed data/ PDFs, ignore anything dropped in separately if you use a scratch upload folder)
+uploads/
