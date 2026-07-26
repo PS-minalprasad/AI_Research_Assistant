@@ -1,0 +1,242 @@
+[
+    {
+        "Question": "What is Artificial Intelligence?",
+        "Expected Answer": "Artificial Intelligence is the branch of computer science that deals with intelligent machines capable of performing tasks that normally require human intelligence.",
+        "Generated Answer": "Artificial Intelligence (AI) is the branch of computer science which deals with intelligence of machines where an intelligent agent takes actions to maximize its chances of success. It is the study of ideas enabling computers to do things that make people seem intelligent. The central principles of AI include reasoning, knowledge, planning, learning, communication, perception, and the ability to move and manipulate objects.",
+        "Response Time (sec)": 9.48,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is the main objective of Artificial Intelligence?",
+        "Expected Answer": "The objective of Artificial Intelligence is to create intelligent machines that can perform tasks requiring human intelligence.",
+        "Generated Answer": "The main objective of Artificial Intelligence (AI) is to enable computers to do things that make people seem intelligent, which includes reasoning, knowledge, planning, learning, communication, perception, and the ability to move and manipulate objects. The ultimate goal of institutions and scientists working on AI is to solve majority of the problems or achieve tasks that humans directly cannot accomplish.",
+        "Response Time (sec)": 31.24,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What are the central principles of Artificial Intelligence?",
+        "Expected Answer": "The central principles include reasoning, knowledge, planning, learning, communication, perception, and the ability to move and manipulate objects.",
+        "Generated Answer": "The central principles of Artificial Intelligence (AI) include:\n\u2022 Reasoning\n\u2022 Knowledge\n\u2022 Planning\n\u2022 Learning\n\u2022 Communication\n\u2022 Perception\n\u2022 Ability to move and manipulate objects.",
+        "Response Time (sec)": 26.31,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is Machine Learning?",
+        "Expected Answer": "Machine Learning is an application of AI in which machines learn from experience without being explicitly programmed.",
+        "Generated Answer": "Machine Learning is an application of AI where machines learn and improve from experience automatically, without being explicitly programmed. It is used in various machine learning algorithms such as Unsupervised Learning, Supervised Learning, and Reinforcement Learning. In Machine Learning, the algorithm uses data to make predictions or take actions that maximize its chances of success.",
+        "Response Time (sec)": 7.78,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is Deep Learning?",
+        "Expected Answer": "Deep Learning is a subset of Machine Learning based on artificial neural networks for predictive analysis.",
+        "Generated Answer": "Deep Learning is a subset of machine learning based on artificial neural networks for predictive analysis. It is one of the applications of AI where machines learn and improve from experience automatically.",
+        "Response Time (sec)": 4.31,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "Name the three types of Machine Learning mentioned in the paper.",
+        "Expected Answer": "Supervised Learning, Unsupervised Learning, and Reinforcement Learning.",
+        "Generated Answer": "\u2022 Supervised Learning\n\u2022 Unsupervised Learning\n\u2022 Reinforcement Learning",
+        "Response Time (sec)": 29.92,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is Supervised Learning?",
+        "Expected Answer": "Supervised Learning learns a function from labeled training data consisting of input objects and desired outputs.",
+        "Generated Answer": "Supervised Learning is a type of machine learning where an algorithm deduces a function from the training data, consisting of a set of an input object and the desired output. It does not use classified information to act on it without any guidance. The goal is to learn a mapping between inputs and outputs based on labeled training data.",
+        "Response Time (sec)": 13.42,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is Unsupervised Learning?",
+        "Expected Answer": "Unsupervised Learning works without labeled data and identifies patterns without guidance.",
+        "Generated Answer": "Unsupervised Learning is a type of machine learning algorithm that does not use classified information to act on it without any guidance. It involves analyzing data without prior knowledge of its structure or meaning, allowing the algorithm to identify patterns and relationships in the data.",
+        "Response Time (sec)": 5.57,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is Reinforcement Learning?",
+        "Expected Answer": "Reinforcement Learning enables machines to take actions that maximize rewards.",
+        "Generated Answer": "Reinforcement Learning is used by machines to take suitable actions to increase the reward to find the best possibility which should be taken.",
+        "Response Time (sec)": 9.7,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is Natural Language Processing (NLP)?",
+        "Expected Answer": "Natural Language Processing is the interaction between computers and human language to process and understand natural language.",
+        "Generated Answer": "Natural Language Processing (NLP) is the interactions between computers and human language where the computers are programmed to process natural languages. It involves obtaining meaning from human languages, capturing audio of a human talk, converting data into text, processing text, and using algorithms to recognize and abstract rules of natural languages.",
+        "Response Time (sec)": 26.45,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "Give two applications of Natural Language Processing mentioned in the paper.",
+        "Expected Answer": "Google Translate and Microsoft Word grammar checking.",
+        "Generated Answer": "\u2022 IVR (Interactive Voice Response) applications used in call centres\n\u2022 Language translation applications like Google Translate",
+        "Response Time (sec)": 12.35,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}]",
+        "Result": "Incorrect"
+    },
+    {
+        "Question": "Why is Natural Language Processing difficult?",
+        "Expected Answer": "Because human languages have complex rules that are difficult for computers to understand.",
+        "Generated Answer": "The natur e of human languages makes Natural Language Processing difficult because of the rules involved in passing information using natural language, which are not easy for computers to understand.",
+        "Response Time (sec)": 12.57,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is Automation in Artificial Intelligence?",
+        "Expected Answer": "Automation uses machines to perform repetitive tasks efficiently while improving productivity.",
+        "Generated Answer": "Automation in Artificial Intelligence refers to the process of getting monotonous and repetitive tasks done by machines, improving productivity, and achieving cost-effective and efficient results.",
+        "Response Time (sec)": 27.24,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is Machine Vision?",
+        "Expected Answer": "Machine Vision enables machines to capture visual information, process it, and analyze images.",
+        "Generated Answer": "Machine vision refers to the use of digital signal processing and computer systems to interpret and make decisions based on visual data from images or videos. It involves converting images into digital data and employing machine learning algorithms to analyze and understand the visual information. Key aspects of machine vision include sensitivity (ability to perceive weak impulses) and resolution (range to distinguish objects).",
+        "Response Time (sec)": 8.68,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is a Knowledge-Based System (KBS)?",
+        "Expected Answer": "A Knowledge-Based System is a computer system that provides advice in a specific domain using knowledge from human experts.",
+        "Generated Answer": "A Knowledge-Based System (KBS) is a computer system that gives advice in a particular domain, utilizing knowledge provided by a human expert. The key features of KBS include:\n\n\u2022 Separation between the knowledge base and the inference engine or algorithm\n\u2022 Knowledge can be represented using various methods such as rules, frames, or cases\n\u2022 The inference engine or algorithm uses the knowledge base to arrive at a conclusion",
+        "Response Time (sec)": 12.82,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What are Neural Networks?",
+        "Expected Answer": "Neural Networks are biologically inspired systems of interconnected computational neurons organized into layers.",
+        "Generated Answer": "Neural Networks are biologically inspired systems consisting of a massively connected network of computational \u201cneurons,\u201d organized in layers. By adjusting the weights of the network, NNs can be \"trained\" to approximate virtually any nonlinear function to a required degree of accuracy. They typically receive a set of input and output exemplars and use a learning algorithm (such as backpropagation) to adjust the weights in the network for supervised learning.",
+        "Response Time (sec)": 16.25,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in Healthcare?",
+        "Expected Answer": "AI helps doctors perform faster diagnoses and monitor patients before hospitalization.",
+        "Generated Answer": "\u2022 AI can help doctors with diagnoses by providing faster and more accurate results than humans.\n\u2022 AI can inform when patients are worsening, allowing medical help to reach them before hospitalization.\n\u2022 AI has applications in fields of cardiology (CRG), neurology (MRI), embryology (sonography), complex operations of internal organs, etc.",
+        "Response Time (sec)": 31.77,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in Gaming?",
+        "Expected Answer": "AI is used to play strategic games such as chess.",
+        "Generated Answer": "AI can be used for gaming purposes, such as playing strategic games like chess, where machines need to think of a large number of possible places.",
+        "Response Time (sec)": 20.4,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in Finance?",
+        "Expected Answer": "AI is used for automation, chatbots, adaptive intelligence, algorithm trading, and fraud detection.",
+        "Generated Answer": "AI and finance industries are the best matches for each other. The finance industry is implementing automation, chatbot, adaptive intelligence, algorithm trading, and machine learning into financial processes. Some examples include:\n\n\u2022 Adaptive intelligence\n\u2022 Algorithm trading\n\u2022 Machine learning\n\u2022 Chatbots\n\u2022 Automation \n\nThese technologies help improve efficiency and accuracy in financial processes.",
+        "Response Time (sec)": 28.25,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in Data Security?",
+        "Expected Answer": "AI detects software bugs, cyber attacks, and improves data security.",
+        "Generated Answer": "AI can be used to make your data more safe and secure. Some examples include AEG bot, AI2 Platform, which are used to determine software bugs and cyber-attacks in a better way.",
+        "Response Time (sec)": 21.31,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in Social Media?",
+        "Expected Answer": "AI organizes user data, identifies trends, hashtags, and user requirements.",
+        "Generated Answer": "AI can organize and manage massive amounts of data. AI can analyze lots of data to identify the latest trends, hashtags, and requirements of different users.",
+        "Response Time (sec)": 20.89,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in Travel and Transport?",
+        "Expected Answer": "AI helps with travel arrangements, hotel and flight recommendations, route suggestions, and chatbots.",
+        "Generated Answer": "AI is becoming highly demanding for travel industries. AI can do various travel-related works such as:\n\n\u2022 Making travel arrangements\n\u2022 Suggesting hotels, flights, and best routes to customers\n\u2022 Using AI-powered chatbots for human-like interaction with customers for better and fast response.",
+        "Response Time (sec)": 26.59,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in the Automotive Industry?",
+        "Expected Answer": "AI provides virtual assistants and supports self-driving cars.",
+        "Generated Answer": "\u2022 AI-powered chatbots are being used to provide virtual assistants for better performance.\n\u2022 Tesla has introduced TeslaBot, an intelligent virtual assistant.\n\u2022 Various industries are working on developing self-driven cars for safer and more secure journeys.",
+        "Response Time (sec)": 26.97,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in Robotics?",
+        "Expected Answer": "AI enables robots to perform intelligent tasks using experience instead of only pre-programmed instructions.",
+        "Generated Answer": "Artificial Intelligence has a remarkable role in Robotics. Usually, general robots are programmed such that they can perform some repetitive tasks. However, with the help of AI, we can create intelligent robots which can perform tasks with their own experiences without pre-programmed rules.\n\n\u2022 Intelligent robots like Erica and Sophia have been developed which can talk and behave like humans.\n \nThe document does not provide additional details on how AI is used in Robotics beyond these points.",
+        "Response Time (sec)": 25.66,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in Agriculture?",
+        "Expected Answer": "AI is used for agricultural robotics, crop monitoring, and predictive analysis.",
+        "Generated Answer": "AI is used in agriculture through various methods such as:\n\n\u2022 Agriculture robotics\n\u2022 Crop monitoring\n\u2022 Predictive analysis\n\nThese applications can be helpful for farmers, enhancing agricultural efficiency and productivity.",
+        "Response Time (sec)": 26.26,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in E-commerce?",
+        "Expected Answer": "AI recommends products based on size, color, and brand preferences.",
+        "Generated Answer": "\u2022 AI is providing a competitive edge to the e-commerce industry by helping shoppers discover associated products with recommended size, color, or brand.\n\u2022 AI can organize and manage massive amounts of data in e-commerce, analyzing lots of data to identify the latest trends, hashtags, and user requirements.\n\u2022 AI-powered chatbots are used in e-commerce for better and fast customer responses.",
+        "Response Time (sec)": 30.96,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "How is AI used in Education?",
+        "Expected Answer": "AI automates grading, provides chatbots, and acts as a virtual tutor.",
+        "Generated Answer": "AI can automate grading, allowing tutors to have more time to teach. AI chatbots can also communicate with students as a teaching assistant. In the future, AI may work as a personal virtual tutor for students, accessible at any time and from any place.",
+        "Response Time (sec)": 24.74,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 2}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What does the paper say about the future of Artificial Intelligence?",
+        "Expected Answer": "AI will become a core technology, improve decision-making, transform cybersecurity, and require responsible governance.",
+        "Generated Answer": "Artificial intelligence forms the basis for all computer learning and is the future of all complex decision making. The ultimate goal of institutions and scientists working on AI is to solve majority of the problems or to achieve the tasks which we humans directly can\u2019t accomplish. It is for sure that development in this field of computer science will change the complete scenario of the world.",
+        "Response Time (sec)": 32.19,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What are the key building blocks of NetApp AI solutions?",
+        "Expected Answer": "ONTAP software, AFF all-flash systems, ONTAP Select software, and Cloud Volumes.",
+        "Generated Answer": "\u2022 ONTAP software enables AI and deep learning both on premises and in the hybrid cloud.\n\u2022 AFF all-flash systems accelerate AI and deep learning workloads and remove performance bottlenecks.\n\u2022 ONTAP Select software enables efficient data collection at the edge, using IoT devices and aggregations points.\n\u2022 Cloud Volumes can be used to rapidly prototype new projects and provide the ability to move AI data to and from the cloud.",
+        "Response Time (sec)": 31.45,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 5}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 4}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}, {'source': 'data\\\\researchpaper on ai.pdf', 'page': 3}]",
+        "Result": "Correct"
+    },
+    {
+        "Question": "What is the conclusion of the research paper?",
+        "Expected Answer": "Artificial Intelligence has significant potential to solve complex problems and will play a major role in the future of technology.",
+        "Generated Answer": "The document does not provide a specific conclusion of the research paper, but it states that Artificial Intelligence (AI) \"forms th e basis for all computer learning and is the future of all complex decision making.\"",
+        "Response Time (sec)": 9.21,
+        "Sources": "[{'source': 'data\\\\researchpaper on ai.pdf', 'page': 1}]",
+        "Result": "Incorrect"
+    }
+]
