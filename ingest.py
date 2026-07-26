@@ -7,8 +7,6 @@ Creates embeddings
 Stores them in FAISS
 """
 
-import os
-
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
@@ -45,14 +43,52 @@ def split_documents(documents):
 
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=CHUNK_SIZE,
-        chunk_overlap=CHUNK_OVERLAP
+        chunk_overlap=CHUNK_OVERLAP,
+        separators=[
+            "\n\n",
+            "\n",
+            ". ",
+            " ",
+            ""
+        ]
     )
 
     chunks = splitter.split_documents(documents)
 
-    logger.info(f"Created {len(chunks)} chunks.")
+    cleaned_chunks = []
 
-    return chunks
+    for chunk in chunks:
+
+        chunk.page_content = chunk.page_content.strip()
+
+        if not chunk.page_content:
+            continue
+
+        # Preserve source
+        chunk.metadata["source"] = chunk.metadata.get(
+            "source",
+            "Unknown"
+        )
+
+        # Preserve page number
+        if "page" not in chunk.metadata:
+
+            if "page_number" in chunk.metadata:
+                chunk.metadata["page"] = chunk.metadata["page_number"]
+            else:
+                chunk.metadata["page"] = 0
+
+        cleaned_chunks.append(chunk)
+
+    logger.info(f"Created {len(cleaned_chunks)} chunks.")
+
+    # Show sample metadata
+    for chunk in cleaned_chunks[:5]:
+        logger.info(
+            f"Chunk metadata: {chunk.metadata}"
+        )
+
+    return cleaned_chunks
 
 
 def create_vector_database(chunks):
