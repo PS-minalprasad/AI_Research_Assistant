@@ -27,9 +27,5 @@ vectorstore/
 logs/
 *.log
 
-# OS junk files
-.DS_Store
-Thumbs.db
-
 # Uploaded files saved at runtime (keep the committed data/ PDFs, ignore anything dropped in separately if you use a scratch upload folder)
 uploads/
