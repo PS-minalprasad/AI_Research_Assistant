@@ -1,4 +1,6 @@
-
+"""
+RAG Pipeline
+"""
 
 import time
 
@@ -20,22 +22,33 @@ class RAGPipeline:
         # Retrieve relevant documents
         docs = self.retriever.search(question)
 
-        # If nothing relevant is retrieved, don't call the LLM
+        # If no relevant documents are found
         if not docs:
             return {
-                "answer": "I couldn't find enough relevant information in the uploaded documents to answer your question.",
+                "answer": "I could not find this information in the uploaded documents.",
                 "sources": [],
                 "response_time": round(time.time() - start_time, 2)
             }
 
-        context = "\n\n".join(
-            doc.page_content for doc in docs
-        )
+        # Build context while removing duplicate chunks
+        context_parts = []
+        seen_chunks = set()
 
+        for doc in docs:
+            content = doc.page_content.strip()
+
+            if content not in seen_chunks:
+                seen_chunks.add(content)
+                context_parts.append(content)
+
+        context = "\n\n".join(context_parts)
+
+        # Build prompt
         prompt = f"""
 {SYSTEM_PROMPT}
 
-Context:
+Retrieved Context:
+
 {context}
 
 Question:
@@ -44,27 +57,38 @@ Question:
 Answer:
 """
 
+        # Generate response
         response = self.llm.generate(prompt)
 
         end_time = time.time()
 
-        # Remove duplicate sources
+        # Collect unique sources
         unique_sources = []
+        seen_sources = set()
 
         for doc in docs:
+
             source = doc.metadata.get("source", "Unknown")
-            page = doc.metadata.get("page", "N/A")
+            page = doc.metadata.get("page", 0)
 
-            source_data = {
-                "source": source,
-                "page": page
-            }
+            try:
+                page = int(page) + 1
+            except Exception:
+                page = "N/A"
 
-            if source_data not in unique_sources:
-                unique_sources.append(source_data)
+            source_key = (source, page)
+
+            if source_key not in seen_sources:
+                seen_sources.add(source_key)
+
+                unique_sources.append({
+                    "source": source,
+                    "page": page
+                })
 
         return {
-            "answer": response.content,
+            "answer": response.content.strip(),
             "sources": unique_sources,
             "response_time": round(end_time - start_time, 2)
         }
+
