@@ -1,5 +1,6 @@
 """
 Retrieval Service
+
 Loads FAISS vector database and performs similarity search.
 """
 
@@ -23,13 +24,10 @@ class RetrievalService:
 
         # Check whether the FAISS index exists
         if not os.path.exists(VECTOR_DB):
-            # Application can start without vectorstore.
-            # User needs to run ingest.py before performing search.
             self.db = None
             return
 
-        # Vectorstore is generated locally through ingest.py
-        # and loaded only from a trusted local source.
+        # Load local FAISS vector database
         self.db = FAISS.load_local(
             VECTOR_DB,
             embeddings,
@@ -38,23 +36,37 @@ class RetrievalService:
 
     def search(self, question):
 
-        # Handle missing vector database gracefully
+        # Handle missing vector database
         if self.db is None:
             return []
 
-        # Retrieve documents with relevance scores
+        # Retrieve top matching chunks
         results = self.db.similarity_search_with_relevance_scores(
             question,
             k=TOP_K
         )
 
-        # Keep only relevant documents
-        RELEVANCE_THRESHOLD = 0.70
+        # Lower threshold to improve recall
+        RELEVANCE_THRESHOLD = 0.50
 
-        filtered_docs = [
-            doc
-            for doc, score in results
-            if score >= RELEVANCE_THRESHOLD
-        ]
+        filtered_docs = []
+
+        print("\nRetrieved Chunks:\n")
+
+        for doc, score in results:
+
+            print(
+                f"Score: {score:.3f} | "
+                f"Page: {doc.metadata.get('page', 'N/A')} | "
+                f"Source: {doc.metadata.get('source', 'Unknown')}"
+            )
+
+            if score >= RELEVANCE_THRESHOLD:
+                filtered_docs.append(doc)
+
+        # Fallback: return top 3 documents if threshold filters everything
+        if not filtered_docs:
+            print("\nNo chunks met the threshold. Using top 3 retrieved chunks.\n")
+            filtered_docs = [doc for doc, score in results[:3]]
 
         return filtered_docs
