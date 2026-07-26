@@ -91,4 +91,3 @@ Answer:
             "sources": unique_sources,
             "response_time": round(end_time - start_time, 2)
         }
-
