@@ -9,6 +9,8 @@ from mcp_server import MCPServer
 import ingest
 
 from config import DATA_FOLDER
+from utils.constants import MAX_FILE_SIZE
+from utils.validator import validate_pdf
 
 
 app = FastAPI(
@@ -20,8 +22,6 @@ app = FastAPI(
 
 # Global RAG instance
 rag = None
-
-MAX_FILE_SIZE = 10 * 1024 * 1024  # 10 MB
 
 
 def load_rag():
@@ -85,12 +85,14 @@ def upload_pdf(file: UploadFile = File(...)):
     global rag
 
 
-    # Validate file type
-    if not file.filename.lower().endswith(".pdf"):
+    # Sanitize filename first — needed before any check or save
+    filename = Path(file.filename).name
+
+    if not filename:
 
         raise HTTPException(
             status_code=400,
-            detail="Only PDF files are allowed."
+            detail="Invalid filename."
         )
 
 
@@ -100,18 +102,6 @@ def upload_pdf(file: UploadFile = File(...)):
             DATA_FOLDER,
             exist_ok=True
         )
-
-
-        # Sanitize filename
-        filename = Path(file.filename).name
-
-
-        if not filename:
-
-            raise HTTPException(
-                status_code=400,
-                detail="Invalid filename."
-            )
 
 
         file_path = os.path.join(
@@ -129,14 +119,20 @@ def upload_pdf(file: UploadFile = File(...)):
             )
 
 
-        # Check file size
-        if os.path.getsize(file_path) > MAX_FILE_SIZE:
+        # Single source of truth for validation: extension + size,
+        # checked together via the shared validator (not duplicated here).
+        is_valid, message = validate_pdf(
+            filename,
+            os.path.getsize(file_path)
+        )
+
+        if not is_valid:
 
             os.remove(file_path)
 
             raise HTTPException(
                 status_code=400,
-                detail="File size exceeds 10 MB limit."
+                detail=message
             )
 
 
