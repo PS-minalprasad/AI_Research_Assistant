@@ -733,24 +733,13 @@ This demonstrates that the assistant avoids generating unsupported answers, incl
 
 You can include screenshots of the application here.
 
-Suggested screenshots:
-
-- Home Screen
-- Upload PDF
-- Chat Interface
-- Generated Answer
-- Source Citation
-- API Documentation
-- Evaluation Results
-
 Example:
 
 ```
 docs/
-├── home.png
-├── upload.png
-├── answer.png
-├── evaluation.png
+├── screenshots1.png
+├── screenshots2.png
+├── screenshot3.png
 ```
 
 ---
